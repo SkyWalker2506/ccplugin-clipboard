@@ -1,0 +1,11 @@
+{
+  "name": "clipboard",
+  "description": "Cross-platform clipboard yönetimi. macOS, Linux (X11/Wayland), Windows destekler.",
+  "version": "1.0.0",
+  "platform": ["macos", "linux", "windows"],
+  "commands": [
+    {"name": "copy", "path": "commands/copy.md"},
+    {"name": "paste", "path": "commands/paste.md"},
+    {"name": "copy-file", "path": "commands/copy-file.md"}
+  ]
+}
