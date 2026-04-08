@@ -1,0 +1,36 @@
+{
+  "cds_version": "1.0",
+  "name": "ccplugin-clipboard",
+  "type": "plugin",
+  "input_patterns": [
+    {
+      "type": "auto_trigger",
+      "keywords": [
+        "clipboard",
+        "paste",
+        "yapistir"
+      ],
+      "confirm": false,
+      "cooldown": 0
+    }
+  ],
+  "output_patterns": [
+    {
+      "type": "terminal_text",
+      "max_lines": 5
+    }
+  ],
+  "lifecycle": {
+    "preflight": {
+      "required_tools": [
+        "pbpaste"
+      ],
+      "required_secrets": [],
+      "required_mcp": []
+    }
+  },
+  "error_handling": {
+    "retry_network": false,
+    "max_retries": 0
+  }
+}
