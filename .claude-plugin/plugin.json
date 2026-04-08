@@ -1,11 +1,12 @@
 {
   "name": "clipboard",
-  "description": "Cross-platform clipboard yönetimi. macOS, Linux (X11/Wayland), Windows destekler.",
   "version": "1.0.0",
-  "platform": ["macos", "linux", "windows"],
-  "commands": [
-    {"name": "copy", "path": "commands/copy.md"},
-    {"name": "paste", "path": "commands/paste.md"},
-    {"name": "copy-file", "path": "commands/copy-file.md"}
-  ]
+  "description": "Cross-platform clipboard manager — macOS, Linux (X11/Wayland), Windows support.",
+  "author": {
+    "name": "Musab Kara",
+    "url": "https://github.com/SkyWalker2506"
+  },
+  "license": "MIT",
+  "category": "tools",
+  "keywords": ["clipboard", "copy", "paste", "cross-platform", "windows", "macos", "linux"]
 }
