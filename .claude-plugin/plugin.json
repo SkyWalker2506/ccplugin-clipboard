@@ -17,5 +17,8 @@
     {"name": "copy-file", "path": "commands/copy-file.md"},
     {"name": "copy-last", "path": "commands/copy-last.md"},
     {"name": "clear", "path": "commands/clear.md"}
+  ],
+  "skills": [
+    {"name": "clipboard", "path": "skills/clipboard/SKILL.md"}
   ]
 }
