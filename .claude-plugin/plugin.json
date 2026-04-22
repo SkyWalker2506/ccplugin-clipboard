@@ -1,7 +1,7 @@
 {
   "name": "clipboard",
   "description": "Cross-platform clipboard manager — macOS, Linux (X11/Wayland), Windows support.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
