@@ -26,3 +26,4 @@ Automatically detects: macOS (pbcopy), Linux X11 (xclip), Linux Wayland (wl-copy
 
 Requires `scripts/clipboard.sh` installed at `~/.claude/plugins/clipboard/scripts/clipboard.sh`.
 Run `bash install.sh` from the plugin directory to set up.
+| Copy selection | copy lines, copy section, copy range | `/copy-selection` |
