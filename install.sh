@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
 PLUGIN_NAME="clipboard"
 INSTALL_DIR="$HOME/.claude/plugins/$PLUGIN_NAME"
@@ -27,5 +27,5 @@ fi
 
 chmod +x "$INSTALL_DIR/scripts/"*.sh
 
-echo "✅ ccplugin-clipboard kuruldu!"
-echo "Komutlar: /copy, /paste, /copy-file, /copy-last"
+echo "✅ ccplugin-clipboard installed!"
+echo "Commands: /copy, /paste, /copy-file, /copy-last, /clear"
