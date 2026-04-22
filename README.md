@@ -31,16 +31,21 @@ cd ccplugin-clipboard && bash install.sh
 | `/paste` | Print clipboard contents to terminal |
 | `/copy-file <path>` | Copy file contents to clipboard |
 | `/copy-last` | Copy last Claude response to clipboard |
+| `/copy-selection <file> <range>` | Copy line range or pattern from file |
+| `/copy-url <url or text>` | Copy URL to clipboard (or auto-extract from text) |
 | `/clear` | Clear clipboard contents |
 
 ## Usage Examples
 
 ```
-/copy Hello world          # Copies "Hello world" to clipboard
-/paste                     # Prints clipboard contents
-/copy-file /tmp/notes.txt  # Copies file contents
-/copy-last                 # Copies last Claude reply
-/clear                     # Empties clipboard
+/copy Hello world                        # Copies "Hello world"
+/paste                                   # Prints clipboard contents
+/copy-file /tmp/notes.txt               # Copies file contents
+/copy-last                               # Copies last Claude reply
+/copy-selection main.py 10:25           # Copies lines 10–25
+/copy-url https://example.com           # Copies URL
+/copy-url "see https://example.com"     # Extracts and copies URL from text
+/clear                                   # Empties clipboard
 ```
 
 ## Platform Support
@@ -53,6 +58,14 @@ cd ccplugin-clipboard && bash install.sh
 | Windows | `clip` / `Get-Clipboard` |
 
 Linux users: install `xclip` (`sudo apt install xclip`) or `wl-clipboard` (`sudo apt install wl-clipboard`) as needed.
+
+## Testing
+
+Run the smoke test to verify clipboard.sh works on your system:
+
+```bash
+bash scripts/test-clipboard.sh
+```
 
 ## License
 
