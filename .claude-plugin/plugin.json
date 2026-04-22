@@ -1,7 +1,7 @@
 {
   "name": "clipboard",
   "description": "Cross-platform clipboard manager — macOS, Linux (X11/Wayland), Windows support.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
@@ -17,7 +17,8 @@
     {"name": "copy-file", "path": "commands/copy-file.md"},
     {"name": "copy-last", "path": "commands/copy-last.md"},
     {"name": "clear", "path": "commands/clear.md"},
-    {"name": "copy-selection", "path": "commands/copy-selection.md"}
+    {"name": "copy-selection", "path": "commands/copy-selection.md"},
+    {"name": "copy-url", "path": "commands/copy-url.md"}
   ],
   "skills": [
     {"name": "clipboard", "path": "skills/clipboard/SKILL.md"}
